@@ -11,6 +11,7 @@
    <link rel="icon" type="image/x-icon" href="home.png">
     <style>
      @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+       @import url('https://fonts.googleapis.com/css?family=Allerta Stencil');
 *{
   margin: 0;
   padding: 0;
@@ -79,12 +80,38 @@ nav li.forward a:hover:before{
 }
 nav ul li.logo{
   flex: 1;
-  color: white;
-  font-size: 35px;
+  color: rgb(250, 8, 8);
+  font-size: 25px;
   font-weight: 600;
+  font-family: 'Allerta Stencil';
   cursor: default;
   user-select: none;
-  margin-left: 35px;
+  margin-left: -60px;
+  margin-top: -25px;
+  text-decoration: underline;
+text-underline-position: under;
+  text-decoration-color: #fff;
+  
+}
+nav ul li.log{
+  flex: 0.5;
+  color: rgb(27, 59, 238);
+  font-size: 15px;
+  font-weight: 500;
+  font-family: 'Allerta Stencil';
+  cursor: default;
+  user-select: none;
+  font-style: italic;
+  margin-left: -1035px;
+  margin-top: 45px;
+  margin-bottom: -3px;
+}
+.logo-img{
+  margin-right: auto;
+  width: 18%;
+  margin-left: -80px;
+  margin-bottom: -20px;
+  margin-top: -20px;
 }
 nav ul li a{
   color: white;
@@ -192,10 +219,45 @@ button:hover{
   nav{
     padding: 5px 10px;
   }
-  nav ul li.logo{
-    font-size: 23px;
-    margin-left: 2px;
-  }
+   nav ul li.logo{
+  flex: 1;
+  color: rgb(250, 8, 8);
+  font-size: 14px;
+  font-weight: 600;
+  font-family: 'Allerta Stencil';
+  cursor: default;
+  user-select: none;
+  margin-left: -20px;
+  margin-top: -15px;
+  text-decoration: underline;
+text-underline-position: under;
+  text-decoration-color: #fff;
+  
+}
+nav ul li.log{
+  flex: 0.5;
+  color: rgb(27, 59, 238);
+  font-size: 10px;
+  font-weight: 500;
+  font-family: 'Allerta Stencil';
+  cursor: default;
+  user-select: none;
+  font-style: italic;
+  margin-left: -215px;
+  margin-top: 20px;
+  margin-bottom: -7px;
+    margin: 10 auto;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo-img{
+  margin-right:auto;
+  margin-left:-30px;
+  width: 110px;
+  display: block;
+}
   nav ul li.items{
     width: 100%;
     display: none;
@@ -286,8 +348,9 @@ button:hover{
 <body>
    <nav>
       <ul>
-        <img class="logo-img" src="logo.jpeg" width="85" height="85" alt="Logo" Align="margin-top" >
-         <li class="logo">Stebin Steel Engineering Works</li>
+         <img class="logo-img" src="bg.png">
+         <li class="logo">STEBIN STEEL ENGINEERING WORKS</li>
+         <li class="log">One Stop Solution For Welding</li>
          <li class="items"><a href="#">Home</a></li>
          <li class="items"><a href="https://stebinsteelengineering.github.io/AboutUs/">About</a></li>
          <li class="items"><a href="https://stebinsteelengineering.github.io/Gallery/">Gallery</a></li>
