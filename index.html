@@ -12,119 +12,63 @@
     <style>
      @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
        @import url('https://fonts.googleapis.com/css?family=Allerta Stencil');
-*{
+{
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-   font-size: 18px;
+  font-family: Arial, sans-serif;
+			background-color: #f0f0f0;
 }
 nav{
+  margin-top: -0.95em;
+  margin-left: -0.20em;
+  margin-right: -0.18em;
   background: #000000;
-  padding: 5px 40px;
+  padding :0em 5em;
+			font-size: 1.8em;
 }
 nav ul{
   
   list-style: none;
-  display: flex;
+  display:flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  margin-right: -4em;
 }
 nav ul li{
-  padding: 15px 0;
+  padding: 0.5em 0em;
   cursor: pointer;
 }
 nav ul li.items{
-  position: relative;
+  position:relative;
   width: auto;
-  margin: 0 16px;
+  margin: 0 0.6em;
   text-align: center;
-  order: 3;
 }
 nav li a:before{
   content: '';
   position: absolute;
   bottom: 0;
   left: 0;
-  height: 3px;
+  height: 0.15em;
   width: 0%;
   background: #44f84d;
-  border-radius: 12px;
+  border-radius: 50em;
   transition: all 0.4s ease;
 }
 nav li a:hover:before{
   width: 100%;
 }
-nav li.center a:before{
-  left: 50%;
-  transform: translateX(-50%);
-}
-nav li.upward a:before{
-  width: 100%;
-  bottom: -5px;
-  opacity: 0;
-}
-nav li.upward a:hover:before{
-  bottom: 0px;
-  opacity: 1;
-}
-nav li.forward a:before{
-  width: 100%;
-  transform: scaleX(0);
-  transform-origin: right;
-  transition: transform 0.4s ease;
-}
-nav li.forward a:hover:before{
-  transform: scaleX(1);
-  transform-origin: left;
-}
-nav ul li.logo{
-  flex: 1;
-  color: rgb(250, 8, 8);
-  font-size: 25px;
-  font-weight: 600;
-  font-family: 'Allerta Stencil';
-  cursor: default;
-  user-select: none;
-  margin-left: -60px;
-  margin-top: -25px;
-  text-decoration: underline;
-text-underline-position: under;
-  text-decoration-color: #fff;
-  
-}
-nav ul li.log{
-  flex: 0.5;
-  color: white;
-  font-size: 15px;
-  font-weight: 500;
-  font-family: 'Allerta Stencil';
-  cursor: default;
-  user-select: none;
-  font-style: italic;
-  margin-left: -1035px;
-  margin-top: 45px;
-  margin-bottom: -3px;
-}
-.logo-img{
-  margin-right: auto;
-  width: 18%;
-  margin-left: -80px;
-  margin-bottom: -20px;
-  margin-top: -20px;
-}
 nav ul li a{
   color: white;
-  font-size: 18px;
+  font-size: 0.8em;
   text-decoration: none;
   transition: .4s;
 }
 nav ul li:hover a{
   color: #44f84d;
 }
-nav ul li i{
-  font-size: 23px;
-}
+
 nav ul li.btn{
   display: none;
 }
@@ -132,32 +76,27 @@ nav ul li.btn.hide i:before{
   content: '\f00d';
 }
 .img{
-  background-image: linear-gradient(rgba(1,9,30,0.4),rgba(1,9,30,0.4)),url('homebg.jpeg');
-  width: 100%;
-  height: 97vh;
+  background-image: linear-gradient(rgba(1,9,30,0.4),rgba(1,9,30,0.4)),url('/Images/homebg.jpeg');
+  height: 100vh;
   background-size: cover;
-  background-position: center;
-  position: relative;
-}
-.img::before{
-  content: '';
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  background: rgba(0, 0, 0, 0.4);
+  background-repeat: no-repeat;
+  margin-top: -1.78em;
+  margin-left: -0.4em;
+  margin-right:-0.3em ;
+  margin-bottom: -1em;
 }
 .center{
   position: absolute;
-  top: 89%;
-  right: -329.5px;
+  top: 37em;
+  right: -21em;
   transform: translate(-50%, -50%);
   width: 50%;
-  padding: 0 97px;
+  padding: 0 0em;
   text-align: center;
 }
 .center .title{
   color: rgb(221, 224, 222);
-  font-size: 35px;
+  font-size: 2.4em;
   font-weight: 600;
   position: absolute;
   font-display: center;
@@ -169,7 +108,7 @@ nav ul li.btn.hide i:before{
 }
 .center .sub_title{
   color: rgb(221, 224, 222);
-  font-size: 33px;
+  font-size: 2.2em;
   font-weight: 600;
   position: absolute;
   font-display: center;
@@ -180,18 +119,17 @@ nav ul li.btn.hide i:before{
   transform: translate(-30%,-30%);
 }
 .center .btns{
-  margin-top: 20px;
+  margin-top: 1.1em;
 }
 .center .btns button{
-  height: 55px;
-  width: 180px;
-  border-radius: 25px;
-  border: 2px solid #009688;
+  height: 3em;
+  width: 10em;
+  border-radius: 25em;
+  border: 0.1em solid #009688;
   background: transparent;
-  margin: 0 10px;
-  font-size: 20px;
-  font-weight: 550;
-  padding: 0 10px;
+  margin: 0 0.4em;
+  font-size: 1.3em;
+  padding: 0 1em;
   cursor: pointer;
   outline: none;
   color: #fff;
@@ -202,7 +140,7 @@ span{
   background: #009688;
   height: 100%;
   width: 0;
-  border-radius: 25px;
+  border-radius: 25em;
   position: absolute;
   left: 0;
   bottom: 0;
@@ -215,6 +153,41 @@ button:hover span{
 button:hover{
   border: none;
 }
+nav ul li.logo{
+  flex: 1.1;
+  color: rgb(250, 8, 8);
+  font-size: 1em;
+  font-weight: 40em;
+  font-family: 'Allerta Stencil';
+  cursor: default;
+  user-select: none;
+  margin-left: 7em;
+  margin-top: -1em;
+  margin-right: 2em;
+  text-decoration: underline;
+text-underline-position: under;
+  text-decoration-color: #f1ef6b;
+  
+}
+nav ul li.log{
+  flex: 0.5;
+  color: rgb(27, 59, 238);
+  font-size: 0.5em;
+  font-weight: 50em;
+  font-family: 'Allerta Stencil';
+  cursor: default;
+  user-select: none;
+  font-style: italic;
+  margin-left: -59em;
+  margin-top: 4em;
+}
+.logo-img{
+margin-right: 32em;
+width: 8em;
+margin: -8em;
+margin-bottom: -8em;
+}
+       
 @media all and (max-width: 768px){
  .img{
   background-image: linear-gradient(rgba(1,9,30,0.4),rgba(1,9,30,0.4)),url('homebg.jpeg');
