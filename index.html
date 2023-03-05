@@ -131,15 +131,17 @@ nav ul li.btn.hide i:before{
   content: '\f00d';
 }
 .img{
-  background-image: linear-gradient(rgba(1,9,30,0.4),rgba(1,9,30,0.4)),url('homebg.jpeg');
+  background-image: linear-gradient(rgba(1,9,30,0.4),rgba(1,9,30,0.4)),url('smoke welding.jpeg');
+  width: 100%;
+  height: 97vh;
   background-size: cover;
-   background-repeat: no-repeat;
   background-position: center;
+  position: relative;
 }
 .img::before{
   content: '';
   position: absolute;
-  height: 100vh;
+  height: 100%;
   width: 100%;
   background: rgba(0, 0, 0, 0.4);
 }
@@ -213,10 +215,21 @@ button:hover{
   border: none;
 }
 @media all and (min-width: 768px) and (max-width:1024px){
-   .img{
-      background-size: cover;
-      background-position:top;
-   }
+ .img{
+  background-image: linear-gradient(rgba(1,9,30,0.4),rgba(1,9,30,0.4)),url('smoke welding.jpeg');
+  width: 100%;
+  height: 89vh;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+}
+.img::before{
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4);
+}
   nav{
     padding: 5px 10px;
   }
