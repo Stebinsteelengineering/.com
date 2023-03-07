@@ -14,33 +14,55 @@
        @import url('https://fonts.googleapis.com/css?family=Allerta Stencil');
 {
   margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-background-color: #f0f0f0;
+  padding: 0;<!DOCTYPE html>
+<head>
+   <meta charset="utf-8">
+   <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no" />
+   <title>Stebin Steel Engineering Works</title>
+   <link rel="icon" type="image/x-icon" href="home.png">
+    <style>
+     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+     @import url('https://fonts.googleapis.com/css?family=Allerta Stencil');
+*{
+  margin: 0;
+    padding: 0;
+}
+.wrapper{
+  width: 1290px;
+  margin: auto;
+}
+body{
+  background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(homebg.jpeg);
+    height: 100vh;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    font-family: 'Lato', sans-serif;
 }
 nav{
-  margin-top: -0.95em;
-  margin-left: -0.20em;
-  margin-right: -0.18em;
-  background: #000000;
-  padding :0em 5em;
-font-size: 1.8em;
+  float: right;
+  list-style: none;
+ margin-top: 30px;
 }
 nav ul{
-  
-  list-style: none;
-  display:flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  margin-right: -4em;
+display: flex;
+list-style: none;
+flex-wrap: wrap;
+align-items: center;
+justify-content: center;
+margin-right: auto;
 }
-nav ul li{
+nav ul li {
   padding: 0.5em 0em;
   cursor: pointer;
 }
 nav ul li.items{
-  position:relative;
+  position: relative;
   width: auto;
   margin: 0 0.6em;
   text-align: center;
@@ -48,88 +70,72 @@ nav ul li.items{
 nav li a:before{
   content: '';
   position: absolute;
-  bottom: 0;
-  left: 0;
+  bottom:0;
+  left:0;
   height: 0.15em;
   width: 0%;
-  background: #44f84d;
+  background:#44f84d;
   border-radius: 50em;
   transition: all 0.4s ease;
+  
 }
 nav li a:hover:before{
   width: 100%;
+
 }
 nav ul li a{
   color: white;
-  font-size: 0.8em;
+  font-size: 1.4em;
   text-decoration: none;
-  transition: .4s;
+  transition:.4s;
 }
-nav ul li:hover a{
-  color: #44f84d;
+nav li:hover a{
+  color:#44f84d;
 }
-
 nav ul li.btn{
   display: none;
 }
 nav ul li.btn.hide i:before{
-  content: '\f00d';
+  content:'\f00d';
 }
-.img{
-  background-image: linear-gradient(rgba(1,9,30,0.4),rgba(1,9,30,0.4)),url('homebg.jpeg');
-  height: 100vh;
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin-top: -1.78em;
-  margin-left: -0.4em;
-  margin-right:-0.3em ;
-  margin-bottom: -1em;
+.logo{
+    float: left;
 }
-.center{
-  position: absolute;
-  top: 37em;
-  right: -21em;
-  transform: translate(-50%, -50%);
-  width: 50%;
-  padding: 0 0em;
-  text-align: center;
+.logo img{
+    width: 380px;
 }
-.center .title{
-  color: rgb(221, 224, 222);
-  font-size: 2.2em;
-  font-weight: 600;
-  position: absolute;
-  font-display: center;
-  font-style: italic;
-  font-family: 'Times New Roman';
-  top: -100%;
-  left: 38%;
-  transform: translate(-30%,-30%);
+
+
+.welcome-text{
+    position: absolute;
+    width: 600px;
+    height: 300px;
+    margin: 23% 50%;
+    text-align: center;
 }
-.center .sub_title{
-  color: rgb(221, 224, 222);
-  font-size: 2em;
-  font-weight: 600;
-  position: absolute;
-  font-display: center;
-  font-style: italic;
-  font-family: 'Times New Roman';
-  top: -45%;
-  left: 31%;
-  transform: translate(-30%,-30%);
+.welcome-text h1{
+    text-align: center;
+    color: #fff;
+    font-size:43px;
 }
-.center .btns{
-  margin-top: 1.1em;
+.welcome-text h3{
+    color: #fff;
+    font-size:33px;
+    font-style: italic;
 }
-.center .btns button{
-  height: 3em;
-  width: 10em;
-  border-radius: 25em;
-  border: 0.1em solid #009688;
+.btns{
+  margin-top: 20px;
+} 
+.btns button{
+  height: 55px;
+  width: 180px;
+  border-radius: 25px;
+  border: 2px solid #009688;
   background: transparent;
-  margin: 0 0.4em;
-  font-size: 1.3em;
-  padding: 0 1em;
+  margin: 0 10px;
+  font-size: 20px;
+  font-weight: 550;
+  padding: 0 10px;
   cursor: pointer;
   outline: none;
   color: #fff;
@@ -140,7 +146,7 @@ span{
   background: #009688;
   height: 100%;
   width: 0;
-  border-radius: 25em;
+  border-radius: 25px;
   position: absolute;
   left: 0;
   bottom: 0;
@@ -153,99 +159,38 @@ button:hover span{
 button:hover{
   border: none;
 }
-nav ul li.logo{
-  flex: 1.1;
-  color: rgb(250, 8, 8);
-  font-size: 1em;
-  font-weight: 40em;
-  font-family: 'Allerta Stencil';
-  cursor: default;
-  user-select: none;
-  margin-left: 7em;
-  margin-top: -1em;
-  margin-right: 2em;
-  text-decoration: underline;
-text-underline-position: under;
-  text-decoration-color: #f1ef6b;
-  
+
+@media (max-width:600px){
+  .wrapper {
+width: 100%;
 }
-nav ul li.log{
-  flex: 0.5;
-  color: rgb(27, 59, 238);
-  font-size: 0.5em;
-  font-weight: 50em;
-  font-family: 'Allerta Stencil';
-  cursor: default;
-  user-select: none;
-  font-style: italic;
-  margin-left: -59em;
-  margin-top: 4em;
+.logo {
+float: none;
+width: 50%;
+text-align: center;
+margin: -4px;
 }
-.logo-img{
-margin-right: 32em;
-width: 8em;
-margin: -8em;
-margin-bottom: -8em;
+img {
+width: ;
 }
-       
-@media all and (max-width: 768px){
- .img{
-  background-image: linear-gradient(rgba(1,9,30,0.4),rgba(1,9,30,0.4)),url('homebg.jpeg');
-  width: 100%;
-  height: 89vh;
-  background-size: cover;
-  background-position: center;
-  position: absolute;
+    .welcome-text {
+width: 100%;
+height: auto;
+margin: 100% 2%;
 }
-.img::before{
-  content: '';
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  background: rgba(0, 0, 0, 0.4);
+    .welcome-text h1 {
+font-size: 28px;
 }
-  nav{
+.welcome-text h3 {
+font-size: 24px;
+}
+nav{
     padding: 5px 10px;
   }
-   nav ul li.logo{
-  flex: 1;
-  color: rgb(250, 8, 8);
-  font-size: 14px;
-  font-weight: 600;
-  font-family: 'Allerta Stencil';
-  cursor: default;
-  user-select: none;
-  margin-left: -20px;
-  margin-top: -15px;
-  text-decoration: underline;
-text-underline-position: under;
-  text-decoration-color: #fff;
-  
-}
-nav ul li.log{
-  flex: 0.5;
-  color: white;
-  font-size: 10px;
-  font-weight: 500;
-  font-family: 'Allerta Stencil';
-  cursor: default;
-  user-select: none;
-  font-style: italic;
-  margin-left: -215px;
-  margin-top: 20px;
-  margin-bottom: -7px;
-    margin: 10 auto;
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: center;
-    justify-content: space-between;
-}
-.logo-img{
-  margin-right:auto;
-  margin-left:-30px;
-  width: 110px;
-  display: block;
-}
+  nav ul li.logo{
+    font-size: 23px;
+    margin-left: 2px;
+  }
   nav ul li.items{
     width: 100%;
     display: none;
@@ -261,43 +206,11 @@ nav ul li.log{
     box-shadow: inset 0 0 5px #33ffff,
                 inset 0 0 10px #66ffff;
   }
- 
-  .center{
-  position: absolute;
-  margin-top: 10px;
-  right: -180px;
-  font size: 5px;
-  padding: 0 250px;
-}
-.center .title{
-  color: rgb(221, 224, 222);
-  font-size: 25px;
-  font-weight: 600;
-  position: absolute;
-  font-display: center;
-  margin-right: -300px;
-  margin-left: 5px;
-  font-style: italic;
-  font-family: 'Times New Roman';
-  top: -20%;
-  left: 374px;
-  transform: translate(-50%,-50%);
-}
-.center .sub_title{
-  color: rgb(221, 224, 222);
-  font-size: 23px;
-  font-weight: 600;
-  position: absolute;
-  font-display: center;
-  margin-right: -800px;
-  margin-left: 55px;
-  font-style: italic;
-  font-family: 'Times New Roman';
-  top: -2%;
-  left: 354px;
-  transform: translate(-50%,-50%);
-}
-.center .btns button{
+  nav ul li.items:hover:after{
+    opacity: 0;
+  }
+
+.btns button{
   height: 55px;
   width: 180px;
   border-radius: 25px;
@@ -313,43 +226,41 @@ nav ul li.log{
   position: relative;
   overflow: hidden;
 }
-
 }
 </style>
 </head>
 
 <body>
-   <nav>
-      <ul>
-         <img class="logo-img" src="bg.png">
-         <li class="logo">STEBIN STEEL ENGINEERING WORKS</li>
-         <li class="log">One Stop Solution For Welding</li>
+  <div class="wrapper">
+    <div class="logo">
+        <img src="bg1.png" alt="logo">
+       </div>
+       <nav>
+        <ul> 
          <li class="items"><a href="#">Home</a></li>
          <li class="items"><a href="https://stebinsteelengineering.github.io/AboutUs/">About</a></li>
-         <li class="items"><a href="https://stebinsteelengineering.github.io/Gallery/">Gallery</a></li>
-         <li class="items"><a href="https://stebinsteelengineering.github.io/Contact/">Contact</a></li>
+         <li class="items"><a href="https://stebinsabu.github.io/Gallery/">Gallery</a></li>
+         <li class="items"><a href="https://stebinsabu.github.io/contact/">Contact</a></li>
          <li class="btn"><a href="#"><i class="fas fa-bars"></i></a></li>
       </ul>
-   </nav>
-   <div class="img">
-    
-   </div>
-   <div class="center">
-   <div class="title">We don't just build things,</div>   
-    <div class="sub_title">We fix them too!!!</div> 
-     <div class="btns">
+       </nav>
+   <div class="welcome-text">
+   <p><h1>We don't just build things,</h1></p>
+    <p><h3>We fix them too!!!</h3></p>
+   <div class="btns">
 
-      <button onclick="window.location.href='https://g.co/kgs/CBH5Gr';"><span></span>Learn More</button>
-      <button onClick="window.location.href='https://g.page/r/Cb4P0_FPJNOaEB0/review';"><span></span>Feedbacks</button>
-     </div>
+    <button onclick="window.location.href='https://g.co/kgs/CBH5Gr';"><span></span>Learn More</button>
+    <button onClick="window.location.href='https://g.page/r/Cb4P0_FPJNOaEB0/review';"><span></span>Feedbacks</button>
    </div>
-   <script>
-      $(document).ready(function(){
-        $('.btn').click(function(){
-          $('.items').toggleClass("show");
-          $('ul li').toggleClass("hide");
-        });
+ </div>
+ <script>
+    $(document).ready(function(){
+      $('.btn').click(function(){
+        $('.items').toggleClass("show");
+        $('ul li').toggleClass("hide");
       });
-   </script>
+    });
+ </script>
 </body>
 </html>
+
