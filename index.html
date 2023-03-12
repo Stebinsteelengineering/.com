@@ -181,13 +181,28 @@ font-size: 28px;
 .welcome-text h3 {
 font-size: 24px;
 }
-
-
- 
+nav{
+ line-height: 40px;
+ padding: 53px 0px; 
+ padding-bottom: 0;
+}
   nav ul li.items{
     width: 100%;
+    font-size: 13px;
     display: none;
   }
+  nav li a:before{
+  content: '';
+  position: absolute;
+  bottom:3px;
+  left:0;
+  height: 0.15em;
+  width: 0%;
+  background:#44f84d;
+  border-radius: 50em;
+  transition: all 0.4s ease;
+  
+}
   nav ul li.items.show{
     display: block;
   }
