@@ -180,24 +180,25 @@ width: 100%;
     opacity: 0;
   }
     .welcome-text {
-width: 100%;
-       position: absolute;
-height: auto;
-margin: 100% 2%;
+  width: 100%;
+  position: relative; /* Change to relative instead of absolute */
+  height: auto;
+  margin: 100px 2%; /* Adjust the top margin to 100px for spacing */
+  padding: 20px; /* Add padding for better layout */
 }
-.welcome-text h1{
+
+.welcome-text h1 {
   font-size: 25px;
   font-weight: 600;
-  position: absolute;
-  font-display: center;
-  margin-right: -300px;
+  /* font-display property is not a valid CSS property. Remove it. */
+  margin-right: -300px; /* Remove this line, it's unnecessary */
   margin-left: 5px;
   font-style: italic;
   font-family: 'Times New Roman';
-  top: -20%;
-  left: 374px;
-  transform: translate(-50%,-50%);
+  /* Remove top and left positioning */
+  transform: translate(-50%, -50%); /* Center the h1 horizontally */
 }
+
 .welcome-text h3{
   color: rgb(221, 224, 222);
   font-size: 23px;
