@@ -150,43 +150,26 @@ button:hover{
   border: none;
 }
 
-@media all and (max-width: 900px){
+@media all and (max-width: 768px){
     .wrapper {
 width: 100%;
 }
-   nav{
-    padding: 5px 10px;
-  }
   nav ul li.logo{
-    font-size: 23px;
     margin-left: 2px;
   }
-  nav ul li.items{
-    width: 100%;
-    display: none;
-  }
-  nav ul li.items.show{
-    display: block;
-  }
-  nav ul li.btn{
-    display: block;
-  }
-  nav ul li.items:hover{
-    border-radius: 5px;
-    box-shadow: inset 0 0 5px #33ffff,
-                inset 0 0 10px #66ffff;
-nav ul li.items:hover:after{
-    opacity: 0;
-  }
+  nav li {
+     display: block;
+     margin-bottom: 0.5rem;
+       }
     .welcome-text {
   width: 100%;
   position: relative;
   margin: 100px 2%;
-  padding: 20px;
+  padding: 1rem;
 }
 
 .welcome-text h1 {
-  font-size: 12px;
+  font-size: 1.5rem;
   font-weight: 600;
   margin-left: 5px;
   font-style: italic;
@@ -195,7 +178,7 @@ nav ul li.items:hover:after{
 }
 
 .welcome-text h3 {
-  font-size: 8px;
+  font-size: 1rem;
   font-weight: 600;
   margin-right: 55px;
   margin-left: 55px;
