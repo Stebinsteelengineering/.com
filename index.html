@@ -189,22 +189,7 @@ button:hover{
   border: none;
 }
        
-h1 {
-    color: #333;
-    text-align: center;
-}
 
-.visitor-count {
-    font-size: 18px;
-    margin-top: 20px;
-    text-align: center;
-    color: #555;
-}
-
-#uniqueVisitorCount {
-    font-weight: bold;
-    color: #007bff;
-}
 @media all and (max-width: 900px){
   nav{
     padding: 13x 0;
@@ -299,24 +284,6 @@ h1 {
   width: 100%;
   background: rgba(0, 0, 0, 0.4);
 }
-   
-h1 {
-    color: #333;
-    text-align: center;
-}
-
-.visitor-count {
-    font-size: 18px;
-    margin-top: 20px;
-    text-align: center;
-    color: #555;
-}
-
-#uniqueVisitorCount {
-    font-weight: bold;
-    color: #007bff;
-}
-
 }
 </style>
 </head>
@@ -345,36 +312,6 @@ h1 {
       <button onClick="window.location.href='https://g.page/r/Cb4P0_FPJNOaEB0/review';"><span></span>Feedbacks</button>
      </div>
    </div>
-      <div class="container">
-        <h1>Website Visitor Tracker</h1>
-        <p class="visitor-count">Unique Visitors: <span id="uniqueVisitorCount">0</span></p>
-    </div>
-    <script src="script.js"></script> <!-- Link to your JavaScript file -->
-<script>
-   // Check if the uniqueVisitorCount is already stored in local storage
-    var uniqueVisitorCount = localStorage.getItem('uniqueVisitorCount');
-    
-    // If not, initialize it to 0
-    if (!uniqueVisitorCount) {
-        uniqueVisitorCount = 0;
-    }
-    
-    // Check if the visitor's unique ID is stored
-    var uniqueID = localStorage.getItem('uniqueVisitorID');
-    if (!uniqueID) {
-        // Generate a unique ID and store it in local storage
-        uniqueID = Math.random().toString(36).substr(2, 9);
-        localStorage.setItem('uniqueVisitorID', uniqueID);
-        
-        // Increment the uniqueVisitorCount and update the display
-        uniqueVisitorCount++;
-        document.getElementById('uniqueVisitorCount').textContent = uniqueVisitorCount;
-        
-        // Store the updated uniqueVisitorCount in local storage
-        localStorage.setItem('uniqueVisitorCount', uniqueVisitorCount);
-    }
-</script>
-
    <script>
       $(document).ready(function(){
         $('.btn').click(function(){
