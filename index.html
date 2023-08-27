@@ -311,9 +311,13 @@ button:hover{
       <button onClick="window.location.href='https://g.page/r/Cb4P0_FPJNOaEB0/review';"><span></span>Feedbacks</button>
      </div>
    </div>
-      <p>Unique Visitors: <span id="uniqueVisitorCount">0</span></p>
+      <div class="container">
+        <h1>Website Visitor Tracker</h1>
+        <p class="visitor-count">Unique Visitors: <span id="uniqueVisitorCount">0</span></p>
+    </div>
+    <script src="script.js"></script> <!-- Link to your JavaScript file -->
 <script>
-    // Check if the uniqueVisitorCount is already stored in local storage
+   // Check if the uniqueVisitorCount is already stored in local storage
     var uniqueVisitorCount = localStorage.getItem('uniqueVisitorCount');
     
     // If not, initialize it to 0
