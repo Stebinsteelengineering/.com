@@ -311,6 +311,32 @@ button:hover{
       <button onClick="window.location.href='https://g.page/r/Cb4P0_FPJNOaEB0/review';"><span></span>Feedbacks</button>
      </div>
    </div>
+      <p>Unique Visitors: <span id="uniqueVisitorCount">0</span></p>
+<script>
+    // Check if the uniqueVisitorCount is already stored in local storage
+    var uniqueVisitorCount = localStorage.getItem('uniqueVisitorCount');
+    
+    // If not, initialize it to 0
+    if (!uniqueVisitorCount) {
+        uniqueVisitorCount = 0;
+    }
+    
+    // Check if the visitor's unique ID is stored
+    var uniqueID = localStorage.getItem('uniqueVisitorID');
+    if (!uniqueID) {
+        // Generate a unique ID and store it in local storage
+        uniqueID = Math.random().toString(36).substr(2, 9);
+        localStorage.setItem('uniqueVisitorID', uniqueID);
+        
+        // Increment the uniqueVisitorCount and update the display
+        uniqueVisitorCount++;
+        document.getElementById('uniqueVisitorCount').textContent = uniqueVisitorCount;
+        
+        // Store the updated uniqueVisitorCount in local storage
+        localStorage.setItem('uniqueVisitorCount', uniqueVisitorCount);
+    }
+</script>
+
    <script>
       $(document).ready(function(){
         $('.btn').click(function(){
